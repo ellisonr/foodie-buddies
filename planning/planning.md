@@ -16,47 +16,48 @@ I'll be using Django to create this application. It is the most recent framework
 
 #### Restaurant
 
-    name
-    cuisine
-    street address
-    city
-    state
-    country
+-  name
+-  cuisine
+-  street address
+-  city
+-  state
+-  country
 
 #### Menu Item
 
-    name
-    price
-    description
-    image_url
-    restaurant (foreignkey for restaurant)
+-  name
+-  price
+-  description
+-  image_url
+-  restaurant (foreignkey for restaurant)
 
 #### Comment
 
-    author (ask for username to be entered)
-    body
-    menu item (foreignkey for menu item)
+-  author (ask for username to be entered)
+-  body
+-  menu item (foreignkey for menu item)
 
 ### MVP:
 
-    An application that allows:
-    	sign-up
-    	log-in
+An application that allows:
 
-    	create restaurant entry
-    	create menu item entries for a single restaurant
-    	create comments for menu item entries
+-  sign-up
+-  log-in
 
-    	delete restaurant entry
-    	delete menu item entry
-    	delete comment
+-  create restaurant entry
+-  create menu item entries for a single restaurant
+-  create comments for menu item entries
 
-    	update restaurant entry
-    	update update menu item entry
-    	update comment
+-  delete restaurant entry
+-  delete menu item entry
+-  delete comment
+
+-  update restaurant entry
+-  update update menu item entry
+-  update comment
 
 ### Extra Features to Shoot For:
 
-Picture Uploading instead of using image URL's
-Connecting users to each other
-Favorites/adding to favorites
+-  Picture Uploading instead of using image URL's
+-  Connecting users to each other
+-  Favorites/adding to favorites
