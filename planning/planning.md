@@ -56,6 +56,10 @@ An application that allows:
 -  update update menu item entry
 -  update comment
 
+### Expected Outcome
+
+It's pretty straightforward, so I hope to just be able to make an application where users can be created and users can sign in. Each user will be able to create a post with description and pictures, but probably just a single picture for now just for MVP. Hopefully, through this project, I'll improve my understanding of what a user would find intuitive and building an application that guides a user instead of leaving guesswork as to what is supposed to happen next.
+
 ### Extra Features to Shoot For:
 
 -  Picture Uploading instead of using image URL's
