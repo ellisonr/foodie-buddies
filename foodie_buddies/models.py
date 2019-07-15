@@ -8,7 +8,8 @@ class Restaurant(models.Model):
     cuisine = models.CharField(max_length=50)
     street_address = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
-    state = models.CharField(max_length=2)
+    state = models.CharField(max_length=50)
+    country = models.CharField(max_length=50, default='')
 
     def __str__(self):
         return self.name
