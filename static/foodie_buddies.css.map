@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "foodie_buddies.css",
+	"sources": [
+		"foodie_buddies.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI,GAChB"
+}
