@@ -4,6 +4,10 @@
 	{% for restaurant in restaurants %}
 	<li>
 		<a href="/restaurants/{{ restaurant.id }}">{{ restaurant.name }}</a>
+		<span
+			>{{ restaurant.cuisine }} - {{ restaurant.city }},
+			{{ restaurant.state }}</span
+		>
 	</li>
 </ul>
 {% endfor %} {% endblock %}

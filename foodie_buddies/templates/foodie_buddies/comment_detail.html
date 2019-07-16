@@ -1,7 +1,6 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
 <div class="single-comment">
-	<h2>{{ comment.author }}</h2>
-	<p>{{ comment.body }}</p>
-	<p>{{ comment.menu_item }}</p>
+	<h2>{{ comment.author }} said</h2>
+	<h3>"{{ comment.body }}" about {{ comment.menu_item }}</h3>
 </div>
 {% endblock %}
