@@ -11,10 +11,11 @@
     font-size: 25px; }
 
 .restaurant-list {
-  background-color: #aeb6bf; }
+  background-color: #aeb6bf;
+  font-size: 17px; }
   .restaurant-list .restaurant-list-detail {
     color: black;
-    font-size: 10px; }
+    font-size: 9px; }
 
 .form {
   padding-top: 15px;
@@ -24,10 +25,11 @@ button {
   border-radius: 5px; }
 
 .menu-item-list {
-  background-color: #aeb6bf; }
+  background-color: #aeb6bf;
+  font-size: 17px; }
   .menu-item-list .menu-item-detail {
     color: black;
-    font-size: 10px; }
+    font-size: 9px; }
 
 .single-item-view {
   padding-top: 10px;
@@ -52,7 +54,8 @@ button {
 .nav-top {
   padding: 20px;
   color: #212f3d;
-  margin: 20px; }
+  margin: 20px;
+  font-size: 17px; }
 
 body {
   width: 100%;
@@ -64,7 +67,7 @@ body {
 
 h1 {
   color: #e52d2d;
-  font-size: 65px;
+  font-size: 60px;
   letter-spacing: 30px;
   padding-top: 20px; }
 
@@ -79,12 +82,14 @@ ul {
     padding: 5px; }
 
 h2 {
-  font-weight: heavy;
-  font-size: 40px;
+  font-size: 35px;
   color: #901313;
   background-color: #bfc9ca;
   margin: 0px;
   padding-top: 20px;
   padding-bottom: 5px; }
+
+h3 {
+  color: #901313; }
 
 /*# sourceMappingURL=foodie_buddies.css.map */
