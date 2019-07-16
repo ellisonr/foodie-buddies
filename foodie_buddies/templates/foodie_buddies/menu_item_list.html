@@ -1,0 +1,9 @@
+{% extends 'foodie_buddies/base.html' %} {% block content %}
+<h1>Menu Item</h1>
+{% for menu_item in menu_items %}
+<div>
+	<h2>
+		<a href="/menuitems/{{ menu_item.id }}">{{ menu_item.name }}</a>
+	</h2>
+</div>
+{% endfor %} {% endblock %}

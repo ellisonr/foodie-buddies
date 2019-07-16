@@ -1,9 +1,9 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
-<h1>Restaurants</h1>
-{% for restaurant in restaurants %}
-<div>
-	<h2>
+<h1>Restaurants <a href="{% url 'restaurant_create' %}">(add new)</a></h1>
+<ul>
+	{% for restaurant in restaurants %}
+	<li>
 		<a href="/restaurants/{{ restaurant.id }}">{{ restaurant.name }}</a>
-	</h2>
-</div>
+	</li>
+</ul>
 {% endfor %} {% endblock %}
