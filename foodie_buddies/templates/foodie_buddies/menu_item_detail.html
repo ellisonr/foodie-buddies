@@ -6,7 +6,7 @@
 	<img src="{{ menu_item.image_url }}" alt="picture of {{ menu_item.name }}" />
 	<h4>from {{ restaurant.name }}</h4>
 	<ul>
-		Comments: {% for comment in menuitem.comment.all %}
+		Comments: {% for comment in menuitem.comments.all %}
 		<li>
 			<a href="/comments/{{ comment.pk }}">{{ comment.body }}</a>
 		</li>

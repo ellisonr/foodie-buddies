@@ -2,6 +2,21 @@ body {
   width: 100%;
   padding: 20px;
   text-align: center;
-  background: grey; }
+  background: grey;
+  font-family: 'Syncopate', sans-serif; }
+
+h1 {
+  color: white;
+  font-size: 75px; }
+
+li {
+  text-decoration: none;
+  list-style: none; }
+
+a {
+  font-size: 25px; }
+
+a:visited {
+  color: white; }
 
 /*# sourceMappingURL=foodie_buddies.css.map */

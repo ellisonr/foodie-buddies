@@ -1,5 +1,5 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
-<h1>Restaurants <a href="{% url 'restaurant_create' %}">(add new)</a></h1>
+<h2>Restaurants <a href="{% url 'restaurant_create' %}">(+)</a></h2>
 <ul>
 	{% for restaurant in restaurants %}
 	<li>

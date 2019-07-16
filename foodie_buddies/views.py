@@ -23,6 +23,9 @@ def menu_item_detail(request, pk):
     menu_item = MenuItem.objects.get(id=pk)
     return render(request, 'foodie_buddies/menu_item_detail.html', {'menu_item': menu_item})
 
+def comment_detail(request, pk):
+    comment = Comment.objects.get(id=pk)
+    return render(request, 'foodie_buddies/comment_detail.html', {'comment': comment})
 
 def restaurant_create(request):
     if request.method == 'POST':
@@ -46,12 +49,12 @@ def menu_item_create(request):
     return render(request, 'foodie_buddies/menu_item_form.html', {'form': form})
 
 
-# def comment_create(request):
-#     if request.method == 'POST':
-#         form = CommentForm(request.POST)
-#         if form.is_valid():
-#             comment = form.save()
-#             return redirect('comment_detail', pk=comment.pk)
-#     else:
-#         form = CommentForm()
-#     return render(request, 'foodie_buddies/comment_form.html', {'form': form})
+def comment_create(request):
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save()
+            return redirect('comment_detail', pk=comment.pk)
+    else:
+        form = CommentForm()
+    return render(request, 'foodie_buddies/comment_form.html', {'form': form})
