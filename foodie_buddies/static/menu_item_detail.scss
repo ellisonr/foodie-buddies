@@ -1,0 +1,25 @@
+.single-item-view {
+	padding-top: 10px;
+	background-color: #f0f3f1;
+	.restaurant-name {
+		text-align: right;
+		padding-right: 10px;
+	}
+	img {
+		padding: 5px;
+		padding-bottom: 25px;
+	}
+	.food-image {
+		max-width: 400px;
+		max-height: 400px;
+	}
+	.comment-header {
+		padding-top: 15px;
+		font-size: 30px;
+		background-color: #aeb6bf;
+		margin: 0px;
+	}
+	.comment-list {
+		background-color: #aeb6bf;
+	}
+}

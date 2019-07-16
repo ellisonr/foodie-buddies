@@ -1,3 +1,59 @@
+.restaurant-detail-body {
+  background-color: #f0f3f1;
+  margin: 0px;
+  padding: 20px; }
+
+.favorites {
+  background-color: #aeb6bf;
+  padding-top: 15px; }
+  .favorites .favorites-title {
+    font-weight: heavy;
+    font-size: 25px; }
+
+.restaurant-list {
+  background-color: #aeb6bf; }
+  .restaurant-list .restaurant-list-detail {
+    color: black;
+    font-size: 10px; }
+
+.form {
+  padding-top: 15px;
+  font-size: 18px; }
+
+button {
+  border-radius: 5px; }
+
+.menu-item-list {
+  background-color: #aeb6bf; }
+  .menu-item-list .menu-item-detail {
+    color: black;
+    font-size: 10px; }
+
+.single-item-view {
+  padding-top: 10px;
+  background-color: #f0f3f1; }
+  .single-item-view .restaurant-name {
+    text-align: right;
+    padding-right: 10px; }
+  .single-item-view img {
+    padding: 5px;
+    padding-bottom: 25px; }
+  .single-item-view .food-image {
+    max-width: 400px;
+    max-height: 400px; }
+  .single-item-view .comment-header {
+    padding-top: 15px;
+    font-size: 30px;
+    background-color: #aeb6bf;
+    margin: 0px; }
+  .single-item-view .comment-list {
+    background-color: #aeb6bf; }
+
+.nav-top {
+  padding: 20px;
+  color: #212f3d;
+  margin: 20px; }
+
 body {
   width: 100%;
   padding: 0px;
@@ -8,7 +64,9 @@ body {
 
 h1 {
   color: #e52d2d;
-  font-size: 75px; }
+  font-size: 65px;
+  letter-spacing: 30px;
+  padding-top: 20px; }
 
 a:visited {
   color: #a00202; }
@@ -20,18 +78,6 @@ ul {
     list-style: none;
     padding: 5px; }
 
-.favorites {
-  background-color: #aeb6bf;
-  padding-top: 15px; }
-
-.favorites-title {
-  font-weight: heavy;
-  font-size: 25px; }
-
-.food-image {
-  max-width: 400px;
-  max-height: 400px; }
-
 h2 {
   font-weight: heavy;
   font-size: 40px;
@@ -40,43 +86,5 @@ h2 {
   margin: 0px;
   padding-top: 20px;
   padding-bottom: 5px; }
-
-.nav-top {
-  padding: 20px;
-  color: #212f3d;
-  margin: 20px; }
-
-.restaurant-detail-body {
-  background-color: #f0f3f4;
-  margin: 0px;
-  padding: 20px; }
-
-.single-item-view {
-  padding-top: 10px; }
-  .single-item-view .restaurant-name {
-    text-align: right;
-    padding-right: 10px; }
-  .single-item-view img {
-    padding: 5px;
-    padding-bottom: 25px; }
-  .single-item-view .comment-header {
-    padding-top: 15px;
-    font-size: 30px;
-    background-color: #aeb6bf;
-    margin: 0px; }
-  .single-item-view .comment-list {
-    background-color: #aeb6bf; }
-
-.restaurant-list {
-  background-color: #aeb6bf; }
-  .restaurant-list .restaurant-list-detail {
-    color: black;
-    font-size: 10px; }
-
-.menu-item-list {
-  background-color: #aeb6bf; }
-  .menu-item-list .menu-item-detail {
-    color: black;
-    font-size: 10px; }
 
 /*# sourceMappingURL=foodie_buddies.css.map */
