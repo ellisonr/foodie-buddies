@@ -1,11 +1,7 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
 <h2>{{ menu_item.name }}</h2>
 <div class="single-item-view">
-	<p class="restaurant-name">
-		from
-		<a href="/restaurants/{{ restaurant.pk }}">{{ menu_item.restaurant }}</a>
-		<!-- ^^^^????? -->
-	</p>
+	<p class="restaurant-name">from {{ menu_item.restaurant }}</p>
 	<h4>${{ menu_item.price }}</h4>
 	<p>{{ menu_item.description }}</p>
 	<img

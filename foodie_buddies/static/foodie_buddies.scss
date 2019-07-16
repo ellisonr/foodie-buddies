@@ -25,6 +25,11 @@ a:visited {
 	color: #a00202;
 }
 
+a:hover {
+	text-decoration: none;
+	color: greenyellow;
+}
+
 ul {
 	padding: 5px;
 	li {
