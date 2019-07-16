@@ -9,6 +9,8 @@
   .favorites .favorites-title {
     font-weight: heavy;
     font-size: 25px; }
+  .favorites .favorites-list {
+    background-color: #aeb6bf; }
 
 .restaurant-list {
   background-color: #aeb6bf;
@@ -76,7 +78,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color: greenyellow; }
+  color: cyan; }
 
 ul {
   padding: 5px; }

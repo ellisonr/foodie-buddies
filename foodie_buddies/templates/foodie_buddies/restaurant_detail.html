@@ -7,14 +7,16 @@
 		<p>{{ restaurant.city }}, {{ restaurant.state }}</p>
 		<p>{{ restaurant.country }}</p>
 	</div>
-	<div class="favorites"></div>
+	<div class="favorites">
 		<h4 class="favorites-title">
 			Favorites found here <a href="{% url 'menu_item_create' %}">(+)</a>
 		</h4>
-		<ul>
+		<ul class="favorites-list">
 			{% for menu_item in restaurant.menu_item.all %}
 			<li>
-				<a href="{% url 'menu_item_detail' pk=menu_item.pk %}">{{ menu_item.name }}</a>
+				<a href="{% url 'menu_item_detail' pk=menu_item.pk %}">{{
+					menu_item.name
+				}}</a>
 			</li>
 			{% endfor %}
 		</ul>
