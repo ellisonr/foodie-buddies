@@ -1,10 +1,9 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
 <h1>Restaurants</h1>
 {% for restaurant in restaurants %}
-<!-- <div class="">
+<div>
 	<h2>
-		<a href="/houses/{{ house.id }}">{{ house.name }}</a>
+		<a href="/restaurants/{{ restaurant.id }}">{{ restaurant.name }}</a>
 	</h2>
-	<img src="{{ house.image_url }}" alt="Picture of {{ house.name }}" />
-</div> -->
+</div>
 {% endfor %} {% endblock %}

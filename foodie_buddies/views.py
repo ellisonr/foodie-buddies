@@ -5,6 +5,12 @@ from django.shortcuts import render, redirect
 from .models import Restaurant, MenuItem, Comment
 # from .forms import RestaurantForm, MenuItemForm, Comment Form
 
+
 def restaurant_list(request):
-	restaurants = Restaurant.objects.all()
-	return render(request, 'foodie_buddies/restaurant_list.html', {'restaurants': restaurants})
+    restaurants = Restaurant.objects.all()
+    return render(request, 'foodie_buddies/restaurant_list.html', {'restaurants': restaurants})
+
+
+def restaurant_detail(request, pk):
+    restaurant = Restaurant.objects.get(id=pk)
+    return render(request, 'foodie_buddies/restaurant_detail.html', {'restaurant': restaurant})
