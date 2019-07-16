@@ -3,14 +3,15 @@
   margin: 0px;
   padding: 20px; }
 
-.favorites {
+.favorites-title {
+  font-weight: heavy;
+  font-size: 25px;
   background-color: #aeb6bf;
-  padding-top: 15px; }
-  .favorites .favorites-title {
-    font-weight: heavy;
-    font-size: 25px; }
-  .favorites .favorites-list {
-    background-color: #aeb6bf; }
+  padding-top: 15px;
+  margin: 0px; }
+
+.favorites-list {
+  background-color: #aeb6bf; }
 
 .restaurant-list {
   background-color: #aeb6bf;

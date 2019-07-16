@@ -4,14 +4,13 @@
 	padding: 20px;
 }
 
-.favorites {
+.favorites-title {
+	font-weight: heavy;
+	font-size: 25px;
 	background-color: #aeb6bf;
 	padding-top: 15px;
-	.favorites-title {
-		font-weight: heavy;
-		font-size: 25px;
-	}
-	.favorites-list {
-		background-color: #aeb6bf;
-	}
+	margin: 0px;
+}
+.favorites-list {
+	background-color: #aeb6bf;
 }
