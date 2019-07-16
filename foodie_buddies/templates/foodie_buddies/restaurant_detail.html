@@ -5,5 +5,14 @@
 	<p>{{ restaurant.street_address }}</p>
 	<p>{{ restaurant.city }}, {{ restaurant.state }}</p>
 	<p>{{ restaurant.country }}</p>
+	<!-- <ul>
+		{% for menuitem in restaurant.menuitems.all %}
+		<li>
+			<a href="{% url 'foodie_buddies/menu_item_detail' %}">{{
+				menuitem.name
+			}}</a>
+		</li>
+		{% endfor %}
+	</ul> -->
 </div>
 {% endblock %}

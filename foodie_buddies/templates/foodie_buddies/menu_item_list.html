@@ -1,9 +1,9 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
-<h1>Menu Item</h1>
+<h1>Menu Item <a href="{% url 'menu_item_create' %}">(add new)</a></h1>
 {% for menu_item in menu_items %}
-<div>
-	<h2>
+<ul>
+	<li>
 		<a href="/menuitems/{{ menu_item.id }}">{{ menu_item.name }}</a>
-	</h2>
-</div>
+	</li>
+</ul>
 {% endfor %} {% endblock %}
