@@ -10,6 +10,9 @@ h1 {
   color: #e52d2d;
   font-size: 75px; }
 
+a {
+  font-size: 15px; }
+
 a:visited {
   color: #a00202; }
 
@@ -68,15 +71,9 @@ h2 {
     background-color: #aeb6bf; }
 
 .restaurant-list {
-  background-color: #aeb6bf; }
+  background-color: #aeb6bf;
+  font-size: 20px; }
   .restaurant-list .restaurant-list-detail {
-    color: black;
-    font-size: 10px; }
-
-.menu-item-list {
-  background-color: #aeb6bf; }
-  .menu-item-list .menu-item-detail {
-    color: black;
-    font-size: 10px; }
+    color: black; }
 
 /*# sourceMappingURL=foodie_buddies.css.map */

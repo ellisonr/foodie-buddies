@@ -1,17 +1,24 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
 <div>
 	<h2>{{ restaurant.name }}</h2>
-	<h4>{{ restaurant.cuisine }}</h4>
-	<p>{{ restaurant.street_address }}</p>
-	<p>{{ restaurant.city }}, {{ restaurant.state }}</p>
-	<p>{{ restaurant.country }}</p>
-	<h4>Favorites found here <a href="{% url 'menu_item_create' %}">(+)</a></h4>
-	<ul>
-		{% for menu_item in restaurant.menu_item.all %}
-		<li>
-			<a href="/menuitems/{{ menuitem.pk }}">{{ menu_item.name }}</a>
-		</li>
-		{% endfor %}
-	</ul>
+	<div class="restaurant-detail-body">
+		<h4>{{ restaurant.cuisine }}</h4>
+		<p>{{ restaurant.street_address }}</p>
+		<p>{{ restaurant.city }}, {{ restaurant.state }}</p>
+		<p>{{ restaurant.country }}</p>
+	</div>
+	<div class="favorites">
+		<h4 class="favorites-title">
+			Favorites found here <a href="{% url 'menu_item_create' %}">(+)</a>
+		</h4>
+		<ul>
+			{% for menu_item in restaurant.menu_item.all %}
+			<li>
+				<a href="/menuitems/{{ menuitem.pk }}">{{ menu_item.name }}</a>
+				<!-- ^^^^????? -->
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>
 {% endblock %}
