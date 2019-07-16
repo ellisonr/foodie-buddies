@@ -5,5 +5,12 @@
 	<p>{{ menu_item.description }}</p>
 	<img src="{{ menu_item.image_url }}" alt="picture of {{ menu_item.name }}" />
 	<h4>from {{ restaurant.name }}</h4>
+	<ul>
+		Comments: {% for comment in menuitem.comment.all %}
+		<li>
+			<a href="/comments/{{ comment.pk }}">{{ comment.body }}</a>
+		</li>
+		{% endfor %}
+	</ul>
 </div>
 {% endblock %}

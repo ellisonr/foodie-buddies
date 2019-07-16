@@ -34,4 +34,4 @@ class Comment(models.Model):
         MenuItem, on_delete=models.CASCADE, related_name='comment')
 
     def __str__(self):
-        return self.name
+        return self.body

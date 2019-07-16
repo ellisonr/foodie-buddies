@@ -44,3 +44,14 @@ def menu_item_create(request):
     else:
         form = MenuItemForm()
     return render(request, 'foodie_buddies/menu_item_form.html', {'form': form})
+
+
+# def comment_create(request):
+#     if request.method == 'POST':
+#         form = CommentForm(request.POST)
+#         if form.is_valid():
+#             comment = form.save()
+#             return redirect('comment_detail', pk=comment.pk)
+#     else:
+#         form = CommentForm()
+#     return render(request, 'foodie_buddies/comment_form.html', {'form': form})
