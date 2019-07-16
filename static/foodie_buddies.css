@@ -6,23 +6,29 @@ body {
   font-family: 'Syncopate', sans-serif; }
 
 h1 {
-  color: #E52D2D;
+  color: #e52d2d;
   font-size: 75px; }
 
-li {
-  text-decoration: none;
-  list-style: none; }
-
 a {
-  font-size: 25px; }
+  font-size: 15px; }
 
 a:visited {
-  color: #E52D2D; }
+  color: #e52d2d; }
 
 nav {
   padding: 20px; }
 
 .restaurant-list-detail {
-  color: #E52D2D; }
+  color: black; }
+
+ul {
+  background-color: #aeb6bf; }
+  ul li {
+    text-decoration: none;
+    list-style: none; }
+
+.food-image {
+  max-width: 300px;
+  max-height: 300px; }
 
 /*# sourceMappingURL=foodie_buddies.css.map */

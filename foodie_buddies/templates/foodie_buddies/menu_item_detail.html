@@ -1,12 +1,17 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
-<div class="single-dish">
+<div>
 	<h2>{{ menu_item.name }}</h2>
 	<p>from {{ menu_item.restaurant }}</p>
 	<h4>${{ menu_item.price }}</h4>
 	<p>{{ menu_item.description }}</p>
-	<img src="{{ menu_item.image_url }}" alt="picture of {{ menu_item.name }}" />
+	<img
+		class="food-image"
+		src="{{ menu_item.image_url }}"
+		alt="picture of {{ menu_item.name }}"
+	/>
+	<h4>Comments <a href="{% url 'comment_create' %}">(+)</a></h4>
 	<ul>
-		Comments: {% for comment in menu_item.comment.all %}
+		{% for comment in menu_item.comment.all %}
 		<li>
 			<a href="/comments/{{ comment.pk }}">{{ comment.body }}</a>
 			<span>by {{ comment.author }}</span>

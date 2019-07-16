@@ -7,21 +7,16 @@ body {
 }
 
 h1 {
-	color: #E52D2D;
+	color: #e52d2d;
 	font-size: 75px;
 }
 
-li {
-	text-decoration: none;
-	list-style: none;
-}
-
 a {
-	font-size: 25px;
+	font-size: 15px;
 }
 
 a:visited {
-	color: #E52D2D;
+	color: #e52d2d;
 }
 
 nav {
@@ -29,5 +24,18 @@ nav {
 }
 
 .restaurant-list-detail {
-	color: #E52D2D;
+	color: black;
+}
+
+ul {
+	background-color: #aeb6bf;
+	li {
+		text-decoration: none;
+		list-style: none;
+	}
+}
+
+.food-image {
+	max-width: 300px;
+	max-height: 300px;
 }

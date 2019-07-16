@@ -5,12 +5,11 @@
 	<p>{{ restaurant.street_address }}</p>
 	<p>{{ restaurant.city }}, {{ restaurant.state }}</p>
 	<p>{{ restaurant.country }}</p>
+	<h4>Favorites found here <a href="{% url 'menu_item_create' %}">(+)</a></h4>
 	<ul>
-		{% for menuitem in restaurant.menuitems.all %}
+		{% for menu_item in restaurant.menu_item.all %}
 		<li>
-			<a href="{% url 'foodie_buddies/menu_item_detail' %}">{{
-				menuitem.name
-			}}</a>
+			<a href="/menuitems/{{ menuitem.pk }}">{{ menu_item.name }}</a>
 		</li>
 		{% endfor %}
 	</ul>
