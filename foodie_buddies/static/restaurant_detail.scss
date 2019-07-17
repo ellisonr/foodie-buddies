@@ -1,22 +1,21 @@
 $light-grey: #bfc9ca;
+$dark-grey: #aeb6bf;
 $bright-red-font: #e52d2d;
 $off-white-body: #f4f6f6;
 $maroon-font: #901313;
 $link-color: #a00202;
 
 .restaurant-detail-body {
-	background-color: #f0f3f1;
 	margin: 0px;
 	padding: 20px;
 }
 
 .favorites-title {
-	font-weight: heavy;
 	font-size: 25px;
-	background-color: #aeb6bf;
+	background-color: $dark-grey;
 	padding-top: 15px;
 	margin: 0px;
 }
 .favorites-list {
-	background-color: #aeb6bf;
+	background-color: $dark-grey;
 }

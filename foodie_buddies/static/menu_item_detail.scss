@@ -1,4 +1,5 @@
 $light-grey: #bfc9ca;
+$dark-grey: #aeb6bf;
 $bright-red-font: #e52d2d;
 $off-white-body: #f4f6f6;
 $maroon-font: #901313;
@@ -6,7 +7,6 @@ $link-color: #a00202;
 
 .single-item-view {
 	padding-top: 10px;
-	background-color: #f0f3f1;
 	.restaurant-name {
 		text-align: right;
 		padding-right: 10px;
@@ -22,10 +22,10 @@ $link-color: #a00202;
 	.comment-header {
 		padding-top: 15px;
 		font-size: 30px;
-		background-color: #aeb6bf;
+		background-color: $dark-grey;
 		margin: 0px;
 	}
 	.comment-list {
-		background-color: #aeb6bf;
+		background-color: $dark-grey;
 	}
 }

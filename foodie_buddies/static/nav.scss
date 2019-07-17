@@ -1,12 +1,24 @@
 $light-grey: #bfc9ca;
+$dark-grey: #aeb6bf;
 $bright-red-font: #e52d2d;
 $off-white-body: #f4f6f6;
 $maroon-font: #901313;
 $link-color: #a00202;
 
-.nav-top {
-	padding: 20px;
-	color: #212f3d;
-	margin: 20px;
-	font-size: 17px;
+nav {
+	h3 {
+		color: #212f3d;
+		a {
+			padding: 20px;
+			margin: 20px;
+			font-size: 17px;
+			color: #212f3d;
+		}
+		a:visited {
+			color: #212f3d;
+		}
+		a:hover {
+			color: cyan;
+		}
+	}
 }
