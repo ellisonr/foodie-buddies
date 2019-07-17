@@ -1,3 +1,69 @@
+.comment-author {
+  font-size: 25px;
+  padding-bottom: 10px; }
+
+.comment-detail {
+  padding-top: 15px;
+  font-size: 15px; }
+
+.footer {
+  margin-bottom: 10px; }
+  .footer a {
+    font-size: 8px;
+    display: inline; }
+  .footer form {
+    font-size: 8px;
+    padding: 7px;
+    display: inline; }
+
+.form {
+  padding-top: 15px;
+  font-size: 18px; }
+
+button {
+  border-radius: 5px; }
+
+.single-item-view {
+  padding-top: 10px; }
+  .single-item-view .detail {
+    padding: 0px; }
+  .single-item-view .restaurant-name {
+    text-align: right;
+    padding-right: 10px; }
+  .single-item-view .food-image {
+    max-width: 400px;
+    max-height: 400px;
+    border-style: outset;
+    margin-bottom: 15px;
+    padding: 7px;
+    border-radius: 8px; }
+  .single-item-view .comment-header {
+    padding-top: 15px;
+    font-size: 30px;
+    background-color: #aeb6bf;
+    margin: 0px; }
+  .single-item-view .comment-list {
+    background-color: #aeb6bf; }
+
+.menu-item-list {
+  background-color: #aeb6bf;
+  font-size: 17px; }
+  .menu-item-list .menu-item-detail {
+    color: black;
+    font-size: 9px; }
+
+nav h3 {
+  color: #212f3d; }
+  nav h3 a {
+    padding: 20px;
+    margin: 20px;
+    font-size: 17px;
+    color: #212f3d; }
+  nav h3 a:visited {
+    color: #212f3d; }
+  nav h3 a:hover {
+    color: cyan; }
+
 .restaurant-detail-body {
   margin: 0px;
   padding: 20px; }
@@ -18,68 +84,6 @@
     color: black;
     font-size: 9px; }
 
-.form {
-  padding-top: 15px;
-  font-size: 18px; }
-
-button {
-  border-radius: 5px; }
-
-.menu-item-list {
-  background-color: #aeb6bf;
-  font-size: 17px; }
-  .menu-item-list .menu-item-detail {
-    color: black;
-    font-size: 9px; }
-
-.single-item-view {
-  padding-top: 10px; }
-  .single-item-view .restaurant-name {
-    text-align: right;
-    padding-right: 10px; }
-  .single-item-view img {
-    padding: 5px;
-    padding-bottom: 25px; }
-  .single-item-view .food-image {
-    max-width: 400px;
-    max-height: 400px; }
-  .single-item-view .comment-header {
-    padding-top: 15px;
-    font-size: 30px;
-    background-color: #aeb6bf;
-    margin: 0px; }
-  .single-item-view .comment-list {
-    background-color: #aeb6bf; }
-
-.comment-author {
-  font-size: 25px;
-  padding-bottom: 10px; }
-
-.comment-detail {
-  padding-top: 15px;
-  font-size: 15px; }
-
-nav h3 {
-  color: #212f3d; }
-  nav h3 a {
-    padding: 20px;
-    margin: 20px;
-    font-size: 17px;
-    color: #212f3d; }
-  nav h3 a:visited {
-    color: #212f3d; }
-  nav h3 a:hover {
-    color: cyan; }
-
-.footer a {
-  font-size: 8px;
-  display: inline; }
-
-.footer form {
-  font-size: 8px;
-  padding: 7px;
-  display: inline; }
-
 body {
   width: 100%;
   padding: 0px;
@@ -93,6 +97,11 @@ h1 {
   font-size: 60px;
   letter-spacing: 30px;
   padding-top: 20px; }
+
+.author {
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  color: #aeb6bf; }
 
 a:visited {
   color: #a00202; }

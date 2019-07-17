@@ -1,18 +1,24 @@
+@import 'comment_detail';
+@import 'footer';
+@import 'form';
+@import 'menu_item_detail';
+@import 'menu_item_list';
+@import 'nav';
 @import 'restaurant_detail';
 @import 'restaurant_list';
-@import 'form';
-@import 'menu_item_list';
-@import 'menu_item_detail';
-@import 'comment_detail';
-@import 'nav';
-@import 'footer';
 
-$light-grey: #bfc9ca;
+// color blocking
 $dark-grey: #aeb6bf;
-$bright-red-font: #e52d2d;
+$light-grey: #bfc9ca;
 $off-white-body: #f4f6f6;
+
+// fonts
+$bright-red-font: #e52d2d;
 $maroon-font: #901313;
+
+// links
 $link-color: #a00202;
+$hover-color: cyan;
 
 body {
 	width: 100%;
@@ -30,13 +36,19 @@ h1 {
 	padding-top: 20px;
 }
 
+.author {
+	font-size: 8px;
+	letter-spacing: 0.5px;
+	color: $dark-grey;
+}
+
 a:visited {
 	color: $link-color;
 }
 
 a:hover {
 	text-decoration: none;
-	color: cyan;
+	color: $hover-color;
 }
 
 ul {

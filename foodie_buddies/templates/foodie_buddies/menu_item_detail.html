@@ -2,8 +2,8 @@
 <h2>{{ menu_item.name }}</h2>
 <div class="single-item-view">
 	<p class="restaurant-name">from {{ menu_item.restaurant }}</p>
-	<h4>${{ menu_item.price }}</h4>
-	<p>{{ menu_item.description }}</p>
+	<h4 class="detail">Price: ${{ menu_item.price }}</h4>
+	<p class="detail">{{ menu_item.description }}</p>
 	<img
 		class="food-image"
 		src="{{ menu_item.image_url }}"

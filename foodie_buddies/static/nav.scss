@@ -4,21 +4,23 @@ $bright-red-font: #e52d2d;
 $off-white-body: #f4f6f6;
 $maroon-font: #901313;
 $link-color: #a00202;
+$hover-color: cyan;
+$nav-font: #212f3d;
 
 nav {
 	h3 {
-		color: #212f3d;
+		color: $nav-font;
 		a {
 			padding: 20px;
 			margin: 20px;
 			font-size: 17px;
-			color: #212f3d;
+			color: $nav-font;
 		}
 		a:visited {
-			color: #212f3d;
+			color: $nav-font;
 		}
 		a:hover {
-			color: cyan;
+			color: $hover-color;
 		}
 	}
 }
