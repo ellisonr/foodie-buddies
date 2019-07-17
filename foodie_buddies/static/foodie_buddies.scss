@@ -3,27 +3,34 @@
 @import 'form';
 @import 'menu_item_list';
 @import 'menu_item_detail';
-// @import 'comment_detail';
+@import 'comment_detail';
 @import 'nav';
+@import 'footer';
+
+$light-grey: #bfc9ca;
+$bright-red-font: #e52d2d;
+$off-white-body: #f4f6f6;
+$maroon-font: #901313;
+$link-color: #a00202;
 
 body {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
-	background: #f4f6f6;
+	background: $off-white-body;
 	font-family: 'Syncopate', sans-serif;
 }
 
 h1 {
-	color: #e52d2d;
+	color: $bright-red-font;
 	font-size: 60px;
 	letter-spacing: 30px;
 	padding-top: 20px;
 }
 
 a:visited {
-	color: #a00202;
+	color: $link-color;
 }
 
 a:hover {
@@ -42,13 +49,13 @@ ul {
 
 h2 {
 	font-size: 35px;
-	color: #901313;
-	background-color: #bfc9ca;
+	color: $maroon-font;
+	background-color: $light-grey;
 	margin: 0px;
 	padding-top: 20px;
 	padding-bottom: 5px;
 }
 
 h3 {
-	color: #901313;
+	color: $maroon-font;
 }
