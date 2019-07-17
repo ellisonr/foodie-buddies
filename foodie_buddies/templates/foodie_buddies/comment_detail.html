@@ -1,9 +1,11 @@
 {% extends 'foodie_buddies/base.html' %} {% block content %}
 <div>
-	<h2>{{ comment.author }} said</h2>
-	<h3>"{{ comment.body }}" about {{ comment.menu_item }}</h3>
+	<h2 class="comment-author">{{ comment.author }} said</h2>
+	<h3 class="comment-detail">
+		"{{ comment.body }}" about {{ comment.menu_item }}
+	</h3>
 </div>
-<footer>
+<footer class="footer">
 	<a href="/comments/{{ comment.id }}/edit"> Edit comment</a>
 	<form action="/comments/{{ comment.id }}/delete" method="POST">
 		{% csrf_token %}

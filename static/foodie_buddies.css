@@ -1,10 +1,8 @@
 .restaurant-detail-body {
-  background-color: #f0f3f1;
   margin: 0px;
   padding: 20px; }
 
 .favorites-title {
-  font-weight: heavy;
   font-size: 25px;
   background-color: #aeb6bf;
   padding-top: 15px;
@@ -35,8 +33,7 @@ button {
     font-size: 9px; }
 
 .single-item-view {
-  padding-top: 10px;
-  background-color: #f0f3f1; }
+  padding-top: 10px; }
   .single-item-view .restaurant-name {
     text-align: right;
     padding-right: 10px; }
@@ -54,11 +51,34 @@ button {
   .single-item-view .comment-list {
     background-color: #aeb6bf; }
 
-.nav-top {
-  padding: 20px;
-  color: #212f3d;
-  margin: 20px;
-  font-size: 17px; }
+.comment-author {
+  font-size: 25px;
+  padding-bottom: 10px; }
+
+.comment-detail {
+  padding-top: 15px;
+  font-size: 15px; }
+
+nav h3 {
+  color: #212f3d; }
+  nav h3 a {
+    padding: 20px;
+    margin: 20px;
+    font-size: 17px;
+    color: #212f3d; }
+  nav h3 a:visited {
+    color: #212f3d; }
+  nav h3 a:hover {
+    color: cyan; }
+
+.footer a {
+  font-size: 8px;
+  display: inline; }
+
+.footer form {
+  font-size: 8px;
+  padding: 7px;
+  display: inline; }
 
 body {
   width: 100%;

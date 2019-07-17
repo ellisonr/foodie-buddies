@@ -17,13 +17,13 @@
 			</li>
 			{% endfor %}
 		</ul>
-		<footer>
+		<footer class="footer">
 			<a href="/restaurants/{{ restaurant.id }}/edit">
-				Edit {{ restaurant.name }}</a
+				Edit Restaurant</a
 			>
 			<form action="/restaurants/{{ restaurant.id }}/delete" method="POST">
 				{% csrf_token %}
-				<input type="submit" value="Delete {{ restaurant.name }}" />
+				<input type="submit" value="Delete Restaurant" />
 			</form>
 		</footer>
 	</div>

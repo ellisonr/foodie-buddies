@@ -20,13 +20,11 @@
 		</li>
 		{% endfor %}
 	</ul>
-	<footer>
-		<a href="/menuitems/{{ menu_item.id }}/edit">
-			Edit {{ menu_item.name }}</a
-		>
+	<footer class="footer">
+		<a href="/menuitems/{{ menu_item.id }}/edit"> Edit Menu Item</a>
 		<form action="/menuitems/{{ menu_item.id }}/delete" method="POST">
 			{% csrf_token %}
-			<input type="submit" value="Delete {{ menu_item.name }}" />
+			<input type="submit" value="Delete Menu Item" />
 		</form>
 	</footer>
 </div>
