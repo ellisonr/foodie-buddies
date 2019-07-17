@@ -1,0 +1,8 @@
+{% extends 'foodie_buddies/base.html' %} {% block content %}
+<h2>Update Menu Item</h2>
+<form class="form" method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Save</button>
+</form>
+{% endblock %}

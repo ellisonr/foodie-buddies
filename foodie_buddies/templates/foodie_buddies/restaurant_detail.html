@@ -17,6 +17,15 @@
 			</li>
 			{% endfor %}
 		</ul>
+		<footer>
+			<a href="/restaurants/{{ restaurant.id }}/edit">
+				Edit {{ restaurant.name }}</a
+			>
+			<form action="/restaurants/{{ restaurant.id }}/delete" method="POST">
+				{% csrf_token %}
+				<input type="submit" value="Delete {{ restaurant.name }}" />
+			</form>
+		</footer>
 	</div>
 </div>
 {% endblock %}

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import RestaurantForm, MenuItemForm, CommentForm
+from .forms import RestaurantForm, MenuItemForm, CommentForm, RestaurantUpdateForm, MenuItemUpdateForm, CommentUpdateForm
 from .models import Restaurant, MenuItem, Comment
 # Create your views here.
 
@@ -28,13 +28,13 @@ def restaurant_create(request):
 def restaurant_update(request, pk):
     restaurant = Restaurant.objects.get(id=pk)
     if request.method == 'POST':
-        form = RestaurantForm(request.body, instance=restaurant)
+        form = RestaurantUpdateForm(request.POST, instance=restaurant)
         if form.is_valid:
             restaurant = form.save()
-            return redirect('restaurant_detail', id=restaurant.id)
+            return redirect('restaurant_detail', pk=restaurant.pk)
     else:
-        form = RestaurantForm(instance=restaurant)
-        return render(request, 'foodie_buddies/restaurant_form.html', {'form': form})
+        form = RestaurantUpdateForm(instance=restaurant)
+        return render(request, 'foodie_buddies/restaurant_update_form.html', {'form': form})
 
 
 def restaurant_delete(request, pk):
@@ -67,13 +67,13 @@ def menu_item_create(request):
 def menu_item_update(request, pk):
     menu_item = MenuItem.objects.get(id=pk)
     if request.method == 'POST':
-        form = MenuItemForm(request.body, instance=menu_item)
+        form = MenuItemUpdateForm(request.POST, instance=menu_item)
         if form.is_valid:
             menu_item = form.save()
-            return redirect('menu_item_detail', id=menu_item.id)
+            return redirect('menu_item_detail', pk=menu_item.pk)
     else:
-        form = MenuItemForm(instance=menu_item)
-        return render(request, 'foodie_buddies/menu_item_form.html', {'form': form})
+        form = MenuItemUpdateForm(instance=menu_item)
+        return render(request, 'foodie_buddies/menu_item_update_form.html', {'form': form})
 
 def menu_item_delete(request, pk):
     if request.method == 'POST':
@@ -100,13 +100,13 @@ def comment_create(request):
 def comment_update(request, pk):
     comment = Comment.objects.get(id=pk)
     if request.method == 'POST':
-        form = CommentForm(request.body, instance=comment)
+        form = CommentUpdateForm(request.POST, instance=comment)
         if form.is_valid:
             comment = form.save()
-            return redirect('comment_detail', id=comment.id)
+            return redirect('comment_detail', pk=comment.pk)
     else:
-        form = CommentForm(instance=comment)
-        return render(request, 'foodie_buddies/comment_form.html', {'form': form})
+        form = CommentUpdateForm(instance=comment)
+        return render(request, 'foodie_buddies/comment_update_form.html', {'form': form})
 
 
 def comment_delete(request, pk):
