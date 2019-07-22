@@ -39,7 +39,7 @@ def restaurant_update(request, pk):
 
 def restaurant_delete(request, pk):
     if request.method == 'POST':
-        Restaurant.objects.get(id = pk).delete()
+        Restaurant.objects.get(id=pk).delete()
     return redirect('restaurant_list')
 
 
@@ -75,9 +75,10 @@ def menu_item_update(request, pk):
         form = MenuItemUpdateForm(instance=menu_item)
         return render(request, 'foodie_buddies/menu_item_update_form.html', {'form': form})
 
+
 def menu_item_delete(request, pk):
     if request.method == 'POST':
-        MenuItem.objects.get(id = pk).delete()
+        MenuItem.objects.get(id=pk).delete()
     return redirect('menu_item_list')
 
 
@@ -97,20 +98,19 @@ def comment_create(request):
     return render(request, 'foodie_buddies/comment_form.html', {'form': form})
 
 
-def comment_update(request, pk):
-    comment = Comment.objects.get(id=pk)
-    if request.method == 'POST':
-        form = CommentUpdateForm(request.POST, instance=comment)
-        if form.is_valid:
-            comment = form.save()
-            return redirect('comment_detail', pk=comment.pk)
-    else:
-        form = CommentUpdateForm(instance=comment)
-        return render(request, 'foodie_buddies/comment_update_form.html', {'form': form})
+# def comment_update(request, pk):
+#     comment = Comment.objects.get(id=pk)
+#     if request.method == 'POST':
+#         form = CommentUpdateForm(request.POST, instance=comment)
+#         if form.is_valid:
+#             comment = form.save()
+#             return redirect('comment_detail', pk=comment.pk)
+#     else:
+#         form = CommentUpdateForm(instance=comment)
+#         return render(request, 'foodie_buddies/comment_update_form.html', {'form': form})
 
 
-def comment_delete(request, pk):
-    if request.method == 'POST':
-        Comment.objects.get(id = pk).delete()
-    return redirect('comment_list')
-	 
+# def comment_delete(request, pk):
+#     if request.method == 'POST':
+#         Comment.objects.get(id = pk).delete()
+#     return redirect('comment_list')

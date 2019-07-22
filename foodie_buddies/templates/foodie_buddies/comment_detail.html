@@ -5,11 +5,11 @@
 		"{{ comment.body }}" about {{ comment.menu_item }}
 	</h3>
 </div>
-<footer class="footer">
+<!-- <footer class="footer">
 	<a href="/comments/{{ comment.id }}/edit"> Edit comment</a>
 	<form action="/comments/{{ comment.id }}/delete" method="POST">
 		{% csrf_token %}
 		<input type="submit" value="Delete comment" />
 	</form>
-</footer>
+</footer> -->
 {% endblock %}
